@@ -68,8 +68,8 @@ class FibonacciHeap(Heap):
 
         def delete_min(self, value) -> int:
 
-            self.pop(value)
             """
+            self.pop(value)
             Supprime et retourne la valeur minimum dans l'arbre
             """
             pass
@@ -85,13 +85,14 @@ class FibonacciHeap(Heap):
             """
             Afficher la nouvelle valeur min
             """
+            varMin = min(self.arbre1)
             varMin2 = min(self.arbre2)
 
-            if self.varMin > varMin2:
-                self.varMin = varMin2
-                print(self.varMin)
+            if varMin > varMin2:
+                varMin = varMin2
+                print(varMin)
             else:
-                print(self.varMin)
+                print(varMin)
                 pass
 
 
